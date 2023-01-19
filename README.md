@@ -1,4 +1,16 @@
 # SYCL-Bench
+This fork was created to test [triSYCL compiler](https://github.com/triSYCL/sycl) on Xilinx Alveo cards.
+Instructions to install it are [here](https://github.com/triSYCL/sycl/blob/sycl/unified/master/sycl/doc/GettingStartedXilinxFPGA.md).
+Modified files are in the `fpga` directory.
+If you want to compile those or other benchmarks to test FPGA device, you need to do it manually, as compiling for FPGA takes a lot of time.
+Compiler command should look somewhat like this:
+```
+$ cd path/to/this/repo
+$ cd fpga
+$ path/to/your/compiler -std=c++20 -fsycl -fsycl-targets=fpga64_hls_hw -I../include/ arith.cpp -o arith -v
+```
+
+## Original README:
 SYCL Benchmark Suite, work in progress
 
 Benchmarks support the following command line arguments:
