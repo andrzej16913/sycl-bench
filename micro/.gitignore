@@ -1,0 +1,8 @@
+arith/
+arith-mod/
+sf/
+*.csv
+*.sh
+*.log
+*.jou
+*.run_summary
